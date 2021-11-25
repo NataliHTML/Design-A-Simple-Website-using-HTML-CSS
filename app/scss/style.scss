@@ -1,0 +1,15 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+* {
+	padding: 0;
+	margin: 0;
+}
+.wrapper {
+	background: url(../images/bg.jpeg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+@import "media";
