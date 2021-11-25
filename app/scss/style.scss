@@ -3,6 +3,7 @@
 @import "reset";
 @import "libs";
 @import "global";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 * {
 	padding: 0;
 	margin: 0;
@@ -11,5 +12,83 @@
 	background: url(../images/bg.jpeg) no-repeat;
 	background-size: cover;
 	height: 100vh;
+	.center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: sans-serif;
+		user-select: none;
+		h1 {
+			color: white;
+			font-size: 70px;
+			font-weight: bold;
+			width: 900px;
+			text-align: center;
+		}
+		h2 {
+			color: white;
+			font-size: 70px;
+			font-weight: bold;
+			width: 885px;
+			margin-top: 10px;
+			text-align: center;
+		}
+		.buttons {
+			margin: 35px 280px;
+			button {
+				height: 50px;
+				width: 150px;
+				font-size: 18px;
+				font-weight: bold;
+				color: #ffb3b3;
+				background: red;
+				border: 1px solid #cc0000;
+				outline: none;
+				cursor: pointer;
+				border-radius: 25px;
+				transition: 0.5s;
+				&:hover {
+					background: #cc0000;
+				}
+			}
+			.btn {
+				margin-left: 25px;
+			}
+		}
+	}
+}
+.navbar {
+	height: 80px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	ul {
+		float: right;
+		margin-right: 20px;
+		li {
+			list-style: none;
+			margin: 0 8px;
+			display: inline-block;
+			line-height: 80px;
+			a {
+				text-decoration: none;
+				color: white;
+				font-size: 20px;
+				padding: 6px 13px;
+				font-family: "Roboto", sans-serif;
+				transition: 0.4s;
+				&.active,
+				&:hover {
+					background: red;
+					border-radius: 2px;
+				}
+			}
+		}
+	}
+}
+.logo {
+	width: 140px;
+	height: auto;
+	padding: 20px 100px;
 }
 @import "media";
